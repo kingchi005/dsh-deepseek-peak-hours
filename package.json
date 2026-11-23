@@ -1,0 +1,59 @@
+{
+  "name": "dsh-deepseek-peak-hours",
+  "version": "1.0.0",
+  "description": "Peak and off-peak pricing awareness for the DeepSeek API: a live composer pill with the time left in the current rate window, a local-day timeline, and the current per-token prices for every model",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "test/*.mjs"
+  ],
+  "scripts": {
+    "test": "node test/peak-load.test.mjs && node test/peak-logic.test.mjs"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  },
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.2-rc.1"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis-plugin",
+    "deepseek",
+    "peak",
+    "off-peak",
+    "pricing",
+    "timezone"
+  ],
+  "author": "KingDavid Ezennwa <kingchi005@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingchi005/dsh-deepseek-peak-hours.git"
+  },
+  "homepage": "https://github.com/kingchi005/dsh-deepseek-peak-hours#readme",
+  "bugs": {
+    "url": "https://github.com/kingchi005/dsh-deepseek-peak-hours/issues"
+  }
+}

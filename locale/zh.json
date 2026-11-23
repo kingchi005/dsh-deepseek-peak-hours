@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DeepSeek 高峰时段",
+    "description": "显示 DeepSeek API 当前处于高峰还是非高峰计费时段、下一次切换时间以及各模型当前价格。"
+  }
+}

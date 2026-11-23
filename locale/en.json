@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DeepSeek peak hours",
+    "description": "Shows whether DeepSeek API pricing is on peak or off-peak rates, when the rate changes, and the current per-token prices."
+  }
+}

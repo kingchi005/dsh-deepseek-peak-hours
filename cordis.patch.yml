@@ -1,0 +1,6 @@
+# DeepSeek peak-hours bundle: the Host row is only an anchor for the Client
+# module, which renders the rate pill under the chat composer and derives every
+# value from the browser clock. No Host route or service is involved.
+- insert:
+    - id: deepseek-peak-hours
+      name: 'dsh-deepseek-peak-hours'
